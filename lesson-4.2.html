@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 | 4. Ders Devamı</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <!-- col-2 ile tüm cihazlarda, tüm viewport'larda kolonların genişliği 2 olsun, yani bir satırda 
+                8 tane kolon olsun demiş oluyoruz. -->
+            <div class="col-2 py-3 bg-dark">sütun</div>
+            <div class="col-2 py-3 bg-danger">sütun</div>
+            <div class="col-2 py-3 bg-success">sütun</div>
+            <div class="col-2 py-3 bg-secondary">sütun</div>
+            <div class="col-2 py-3 bg-primary">sütun</div>
+            <div class="col-2 py-3 bg-dark">sütun</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <!-- Viewport'un xs'a eşit, xs'dan az ve xs'un üstü olduğu durumlarda col-12 devrede olacak. Yani bir satırda 1 tane kolon olacak. 
+                Viewport'un small(576px) ve üstü olduğu durumlarda col-sm-6 devrede olacak. Yani bir satırda 2 tane kolon olacak. 
+                Viewport'un large(992px) ve daha üstü olduğu durumlarda col-lg-3 devrede olacak. Yani bir satırda 4 tane kolon olacak.-->
+            <div class="col-12 col-sm-6 col-lg-3 py-3 bg-dark">sütun</div>
+            <div class="col-12 col-sm-6 col-lg-3 py-3 bg-danger">sütun</div>
+            <div class="col-12 col-sm-6 col-lg-3 py-3 bg-success">sütun</div>
+            <div class="col-12 col-sm-6 col-lg-3 py-3 bg-secondary">sütun</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

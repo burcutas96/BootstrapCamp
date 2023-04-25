@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 4. Ders</title>
+</head>
+<body>
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col-1 py-3 bg-dark">Sütun</div>
+            <div class="col-1 py-3 bg-danger">Sütun</div>
+            <div class="col-1 py-3 bg-success">Sütun</div>
+            <div class="col-1 py-3 bg-secondary">Sütun</div>
+            <div class="col-1 py-3 bg-primary">Sütun</div>
+            <div class="col-1 py-3 bg-dark">Sütun</div>
+            <div class="col-1 py-3 bg-danger">Sütun</div>
+            <div class="col-1 py-3 bg-success">Sütun</div>
+            <div class="col-1 py-3 bg-secondary">Sütun</div>
+            <div class="col-1 py-3 bg-primary">Sütun</div>
+            <div class="col-1 py-3 bg-dark">Sütun</div>
+            <div class="col-1 py-3 bg-danger">Sütun</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col-2 py-3 bg-dark">Sütun</div>
+            <div class="col-2 py-3 bg-danger">Sütun</div>
+            <div class="col-2 py-3 bg-success">Sütun</div>
+            <div class="col-2 py-3 bg-secondary">Sütun</div>
+            <div class="col-2 py-3 bg-primary">Sütun</div>
+            <div class="col-2 py-3 bg-dark">Sütun</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col-4 py-3 bg-dark">Sütun</div>
+            <div class="col-4 py-3 bg-danger">Sütun</div>
+            <div class="col-4 py-3 bg-success">Sütun</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col-1 py-3 bg-dark">Sütun</div>
+            <div class="col-4 py-3 bg-danger">Sütun</div>
+            <div class="col-7 py-3 bg-success">Sütun</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col-2 py-3 bg-dark">Sütun</div>
+            <div class="col-11 py-3 bg-danger">Sütun</div>
+        </div>
+    </div>
+
+
+    <!-- Biz sütunun boyutunu vermezsek bootstrap bunu kendisi ayarlayabiliyor: -->
+
+    <h6 class="text-center">Bootstrap'ın otomatik ayarladığı row'lar</h6>
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">  <!-- Bootstrap bir satırı iki kolon olacak şekilde böldü.-->
+            <div class="col py-3 bg-dark">Sütun</div>
+            <div class="col py-3 bg-danger">Sütun</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col py-3 bg-dark">Sütun</div>
+            <div class="col py-3 bg-danger">Sütun</div>
+            <div class="col py-3 bg-success">Sütun</div>
+            <div class="col py-3 bg-secondary">Sütun</div>
+        </div>
+    </div>
+
+
+    <!-- Kolonların bootstrap ile otomatik ayarlandığı koşullarda bir satırda 4 kolon olsun 
+        3 kolon olsun gibi şartlar getirebiliyoruz. Bu şartı row classından sonra tanımlayabiliyoruz. Örneğin: -->
+    
+    <h6 class="text-center">Koşullu row</h6>
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row row-cols-2">   <!-- Burada, bir satırda iki tane kolonun olabileceğini söyledik. -->
+            <div class="col py-3 bg-dark">Sütun</div>
+            <div class="col py-3 bg-danger">Sütun</div>
+            <div class="col py-3 bg-success">Sütun</div>  <!-- Bu yüzden üçüncü kolonumuz bir alt satıra taşınmış oldu.-->
+        </div>
+    </div>
+
+    <h6 class="text-center">İç içe grid</h6>
+    <!-- Bootstrap ile içi içe grid sistemi oluşturabiliyoruz. -->
+    <div class="container-fluid my-2 p-3 text-white">
+        <div class="row">
+            <div class="col-4 py-3 bg-dark">Sütun</div>
+            <div class="col-8 py-3 bg-danger">
+                <div class="row">
+                    <div class="col-4 bg-primary">Sütun</div>
+                    <div class="col-4 bg-success">Sütun</div>
+                    <div class="col-4 bg-secondary">Sütun</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
