@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 6. Ders</title>
+</head>
+
+<body>
+    <!-- Dersin İçeriği: 
+        d-flex, d-inline-flex, 
+        flex-row, flex-row-reverse, 
+        flex-column, flex-column-reverse 
+    -->
+
+
+    <div class="container-fluid my-2 p-3">
+
+        <!-- d-flex: block eleman gibi bulunduğu satırın tamamını kaplar.  -->
+        <div class="d-flex bg-dark p-3 text-white mb-4">d-flex neymiş?</div>
+
+        <!-- d-inline-flex: inline eleman gibi sadece içindeki içerik kadar yer kaplar. -->
+        <div class="d-inline-flex bg-dark p-3 text-white mb-4">d-inline-flex neymiş?</div>
+
+        <!-- Kutu, d-lg-flex ile large ve üstü olan viewport'larda block eleman gibi davranır. Ancak large altı olan viewport'larda 
+        inline eleman gibi davranır.-->
+        <div class="d-inline-flex d-lg-flex bg-dark p-3 text-white mb-4">d-lg-flex neymiş?</div>
+
+        <!-- Kutu, d-md-inline-flex ile medium ve üstü olan viewport'larda inline eleman gibi davranır. Ancak medium altı olan viewport'larda 
+        block eleman gibi davranır.-->
+        <div class="d-flex d-md-inline-flex bg-dark p-3 text-white mb-4">d-md-inline-flex neymiş?</div>
+
+        <!-- d-flex ve d-inline-flex ile kutularımızın block eleman gibi tüm satırı kaplamalarını engellemiş oluyoruz. flex ile flex kutusunun 
+        içindeki elemanların içeriği kadar yer kaplayıp, yan yana gelmelerini sağlıyoruz. -->
+        <div class="d-flex bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger"><img src="img/Tom's_Restaurant.jpg" alt="" class="img-fluid"></div>
+            <div class="p-2 bg-warning">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-inline-flex bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-warning">Flex İçerik 3</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- flex-row ve flex-row-reverse -->
+    <div class="container-fluid my-2 p-3">
+
+        <!-- Kutuların varsayılan diziliş yönü soldan sağa şeklindedir. Buna karşılık gelen sınıf ise flex-row'dur. -->
+        <div class="d-flex flex-row bg-dark p-3 mb-4">
+            <div class="p-2 bg-info-subtle">Flex Row 1</div>
+            <div class="p-2 bg-danger-subtle">Flex Row 2</div>
+            <div class="p-2 bg-warning-subtle">Flex Row 3</div>
+        </div>
+
+        <!-- flex-row-reverse ile kutuların varsayılan diziliş yönünü tersine çevirmiş oluruz. Yani kutular 
+        sağdan sola doğru sıralanmış olur.  -->
+        <div class="d-flex flex-row-reverse bg-dark p-3 mb-4">
+            <div class="p-2 bg-info-subtle">Flex Row 1</div>
+            <div class="p-2 bg-danger-subtle">Flex Row 2</div>
+            <div class="p-2 bg-warning-subtle">Flex Row 3</div>
+        </div>
+
+        <!-- Kutular large ve üstü viewport'larda sağdan sola doğru hizalanmış olacak. large altı viewport'larda ise default 
+        olarak soldan sağa doğru hizalanmış olacak. -->
+        <div class="d-flex flex-lg-row-reverse bg-dark p-3 mb-4">
+            <div class="p-2 bg-info-subtle">Flex Row 1</div>
+            <div class="p-2 bg-danger-subtle">Flex Row 2</div>
+            <div class="p-2 bg-warning-subtle">Flex Row 3</div>
+        </div>
+
+        <!-- Kutular medium ve üstü viewport'larda soldan sağa doğru hizalanmış olacak. medium altı viewport'larda ise 
+        olarak sağdan sola doğru hizalanmış olacak. -->
+        <div class="d-inline-flex flex-row-reverse flex-md-row bg-dark p-3 mb-4">
+            <div class="p-2 bg-info-subtle">Flex Row 1</div>
+            <div class="p-2 bg-danger-subtle">Flex Row 2</div>
+            <div class="p-2 bg-warning-subtle">Flex Row 3</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- flex-column ve flex-column-reverse -->
+    <div class="container-fluid my-2 p-3">
+
+        <!-- flex ile yan yana gelen kutularımızın alt alta sıralanmasını istiyorsak flex column kullanmalıyız. -->
+        <div class="d-inline-flex flex-column bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-success">Flex Column 1</div>
+            <div class="p-2 bg-secondary">Flex Column 2</div>
+            <div class="p-2 bg-primary">Flex Column 3</div>
+        </div>
+        <div class="d-flex flex-column bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-success">Flex Column 1</div>
+            <div class="p-2 bg-secondary">Flex Column 2</div>
+            <div class="p-2 bg-primary">Flex Column 3</div>
+        </div>
+
+        <div class="d-inline-flex flex-column-reverse bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-success">Flex Column 1</div>
+            <div class="p-2 bg-secondary">Flex Column 2</div>
+            <div class="p-2 bg-primary">Flex Column 3</div>
+        </div>
+        <div class="d-flex flex-column-reverse bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-success">Flex Column 1</div>
+            <div class="p-2 bg-secondary">Flex Column 2</div>
+            <div class="p-2 bg-primary">Flex Column 3</div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
