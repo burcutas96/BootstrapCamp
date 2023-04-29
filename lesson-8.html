@@ -14,7 +14,11 @@
         flex-grow,
         flex-shrink,
         .me-auto,
-        .ms-auto
+        .ms-auto,
+        order,
+        flex-wrap,
+        flex-wrap-reverse,
+        flex-nowrap
     -->
 
 
@@ -46,7 +50,8 @@
 
         <h6>Alanın geri kalanını doldurmak için esnek bir öğede .flex-grow-1 classını kullanabiliriz. 
             Aşağıdaki örnekte, ilk iki esnek öğe içerikleri kadar yer kaplarken, 
-            son öğe kalan kullanılabilir alanı kaplar:</h6>
+            son öğe kalan kullanılabilir alanı kaplar:
+        </h6>
         <div class="d-flex bg-secondary p-3 text-white mb-4">
             <div class="p-2 bg-info">Flex İçerik 1</div>
             <div class="p-2 bg-dark">Flex İçerik 2</div>
@@ -74,7 +79,7 @@
             <div class="p-2 bg-dark">Flex İçerik 2</div>
             <div class="p-2 bg-danger">Flex İçerik 3</div>
         </div>
-        
+
 
         <h6>Üçüncü elemana verdiğimiz .ms-auto classı ile kutuya sol taraftan margin uygulamış oluyoruz. <br>
             (.ms --> margin left)
@@ -83,6 +88,103 @@
             <div class="p-2 bg-info">Flex İçerik 1</div>
             <div class="p-2 bg-dark">Flex İçerik 2</div>
             <div class="p-2 ms-auto bg-danger">Flex İçerik 3</div>
+        </div>
+
+
+        <h6>order classı ile kutularımızın sırasını değiştirebiliyoruz.</h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 order-3 bg-info">Flex İçerik 1 (3.sıra)</div>
+            <div class="p-2 order-5 bg-dark">Flex İçerik 2 (5.sıra)</div>
+            <div class="p-2 order-2 bg-danger">Flex İçerik 3 (2.sıra)</div>
+            <div class="p-2 order-1 bg-success">Flex İçerik 4 (1.sıra)</div>
+            <div class="p-2 order-4 bg-warning">Flex İçerik 5 (4.sıra)</div>
+        </div>
+
+
+        <h6>flex-nowrap ile kutuya sığmayan içeriğimizin bir alt satıra düşmesini engelliyoruz. 
+            default olan değer flex-wrap'tir yani kutuya sığmayan içeriğimiz bir alt satıra düşer.
+        </h6>
+        <div class="d-flex flex-wrap bg-secondary p-3 text-white mb-4">
+            <div class="p-2 border border-2 border-dark">Flex İçerik 1</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 2</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 3</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 4</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 5</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 6</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 7</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 8</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 9</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 10</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 11</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 12</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 13</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 14</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 15</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 16</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 17</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 18</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 19</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 20</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 21</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 22</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 23</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 24</div>
+        </div>
+
+        <h6>flex-wrap-reverse aşağıdan yukarıya doğru kaydırma yapar.</h6>
+        <div class="d-flex flex-wrap-reverse bg-secondary p-3 text-white mb-4">
+            <div class="p-2 border border-2 border-dark">Flex İçerik 1</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 2</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 3</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 4</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 5</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 6</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 7</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 8</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 9</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 10</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 11</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 12</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 13</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 14</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 15</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 16</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 17</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 18</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 19</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 20</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 21</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 22</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 23</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 24</div>
+        </div>
+
+        <h6>flex-nowrap:</h6>
+        <div class="d-flex flex-nowrap bg-secondary p-3 mb-4">
+            <div class="p-2 border border-2 border-dark">Flex İçerik 1</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 2</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 3</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 4</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 5</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 6</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 7</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 8</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 9</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 10</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 11</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 12</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 13</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 14</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 15</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 16</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 17</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 18</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 19</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 20</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 21</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 22</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 23</div>
+            <div class="p-2 border border-2 border-dark">Flex İçerik 24</div>
         </div>
 
     </div>
