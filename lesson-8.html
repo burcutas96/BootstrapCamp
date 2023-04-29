@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 8. Ders</title>
+</head>
+<body>
+    <!-- 
+        Ders içeriği: 
+        flex-fill,
+        flex-grow,
+        flex-shrink,
+        .me-auto,
+        .ms-auto
+    -->
+
+
+    <div class="container mt-4">
+
+        <h6>flex-fill classına sahip olmayan elemanların default davranışı, içeriği kadar yer kaplamaktır.</h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-dark">Flex İçerik 2</div>
+            <div class="p-2 bg-danger">Flex İçerik 3</div>
+        </div>
+
+        <h6> Kapsayıcısının flex olduğu kutunun üye elemanları, normalde içerikleri kadar yer kaplarken 
+            flex-fill class'ına sahip elemanlar bulundukları satırı eşit genişlikte kaplarlar. 
+        </h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 flex-fill bg-info">Flex İçerik 1</div>
+            <div class="p-2 flex-fill bg-dark">Flex İçerik 2</div>
+            <div class="p-2 flex-fill bg-danger">Flex İçerik 3</div>
+        </div>
+
+        <h6>flex-fill classında da breakpoint noktalarını kullanabiliriz.</h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 flex-lg-fill bg-info">Flex İçerik 1</div>
+            <div class="p-2 flex-lg-fill bg-dark">Flex İçerik 2</div>
+            <div class="p-2 flex-lg-fill bg-danger">Flex İçerik 3</div>
+        </div>
+
+
+        <h6>Alanın geri kalanını doldurmak için esnek bir öğede .flex-grow-1 classını kullanabiliriz. 
+            Aşağıdaki örnekte, ilk iki esnek öğe içerikleri kadar yer kaplarken, 
+            son öğe kalan kullanılabilir alanı kaplar:</h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-dark">Flex İçerik 2</div>
+            <div class="p-2 flex-grow-1 bg-danger">Flex İçerik 3</div>
+        </div>
+
+
+        <h6>flex-shrink-0 class'ı ile içeriğin kutuya sığmaması halinde dışarıya taşmasına izin vermiş oluruz.
+            flex-shrink-1 classı ise default değerdir. İçeriğin kutunun içinde sığmasını sağlar.
+        </h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-dark">Flex İçerik 2</div>
+            <div class="p-2 flex-shrink-0 bg-danger">Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex 
+                İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3Flex İçerik 3
+            </div>
+        </div>
+
+
+        <h6>Birinci elemana verdiğimiz .me-auto classı ile kutuya sağ taraftan margin uygulamış oluyoruz. <br>
+            (.me --> margin right)
+        </h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 me-auto bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-dark">Flex İçerik 2</div>
+            <div class="p-2 bg-danger">Flex İçerik 3</div>
+        </div>
+        
+
+        <h6>Üçüncü elemana verdiğimiz .ms-auto classı ile kutuya sol taraftan margin uygulamış oluyoruz. <br>
+            (.ms --> margin left)
+        </h6>
+        <div class="d-flex bg-secondary p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-dark">Flex İçerik 2</div>
+            <div class="p-2 ms-auto bg-danger">Flex İçerik 3</div>
+        </div>
+
+    </div>
+</body>
+</html>
