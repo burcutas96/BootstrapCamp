@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 11. Ders</title>
+</head>
+<body>
+    <div class="container my-2 p-3">
+
+        <p class="h6 text-danger"> 
+            A) .lead classı, daha şık bir paragraf oluşturmamızı ve paragrafın öne çıkmasını sağlar.
+        </p>
+        <p class="lead">Ne şık bir paragraf</p>
+
+
+        <p class="h6 text-danger mt-5"> 
+            B) .text-left class'ı metni sola, .text-right class'ı sağa hizalar. 
+            .text-center class'ı ise metni ortalar.
+        </p>
+        <p class="text-start">Metni sola hizaladım.</p>
+        <p class="text-center">Metni ortaladım.</p>
+        <p class="text-end">Metni sağa hizaladım.</p>
+
+
+        <p class="h6 text-danger mt-5"> 
+            C) Metin hizalama sınıflarını breakpointler ile de kullanabiliriz.
+        </p>
+        <p class="text-start text-md-center text-lg-end">Değişiyorum.</p>
+
+
+        <p class="h6 text-danger mt-5"> 
+            D) .text-nowrap class'ı ile yazımızın ekran genişliğine olan duyarlılığını engellemiş oluruz.
+            Default değer: .text-wrap'tir.
+        </p>
+        <p class="text-nowrap">Duyarlılığımı kim elimden aldı?</p>
+
+
+        <p class="h6 text-danger mt-5">
+            E) .text-break class'ı ile uzun, tek bir kelimeymiş gibi yazılmış 
+            metnimizi ekran genişliğine duyarlı bir hale getirmiş oluyoruz.
+        </p>
+        <p class="h6 text-danger mt-2 ms-3">.text-break class'ı olmadan metnin görünümü:</p>
+        <p>Duyarlılığımıldadisldiadlisaldiasldasidkimsldşasdelaelimdenaldiasldiasdifaisaişdşsadlşisdaisdaşdlsaldlsalidslaşdiasdşaidlşaişdlasidliasldşilşaskdşaskdşasdlşasşdklaşdkşsadkşlflsadasdsadsdadsdasdsdaldı?</p>
+        <p class="h6 text-danger mt-2 ms-3">.text-break class'ı ile metnin görünümü:</p>
+        <p class="text-break">Duyarlılığımıldadisldiadlisaldiasldasidkimsldşasdelaelimdenaldiasldiasdifaisaişdşsadlşisdaisdaşdlsaldlsalidslaşdiasdşaidlşaişdlasidliasldşilşaskdşaskdşasdlşasşdklaşdkşsadkşlflsadasdsadsdadsdasdsdaldı?</p>
+    
+    
+        <p class="h6 text-danger mt-5">
+            F) text decoration:
+        </p>
+        <p>Normal bir paragraf </p>
+        <p class="text-decoration-underline">text decoration underline özelliği</p>
+        <p class="text-decoration-line-through">text decoration line through özelliği</p>
+        <a href="#" class="text-decoration-none">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Profile</a>
+        <a href="#" class="text-decoration-none">Contact</a>
+    
+        <p class="h6 text-danger mt-5">
+            G) Metnin harflerini büyük-küçük yapan sınıflar: (.text-capitalize class'ı 
+            metinlerin ilk harflerini büyük harf yapar.)
+        </p>
+        <p class="text-lowercase">lowercased text.</p>
+        <p class="text-uppercase">uppercased text.</p>
+        <p class="text-capitalize">capitalized text.</p>
+    
+
+        <p class="h6 text-danger mt-5">
+            H) .initialism class'ı &lt;abbr&gt; öğesinin içindeki metni biraz daha küçük yazı tipi boyutunda görüntüler.
+        </p>
+        <p><abbr title="Dünya Sağlık Örgütü" class="initialism">WHO</abbr>'nun merkezi Cenevre'dir.</p>
+
+
+        <p class="h6 text-danger mt-5">
+            I) font-size:
+        </p>
+        <p class="fs-1">Font size-1</p>
+        <p class="fs-2">Font size-2</p>
+        <p class="fs-3">Font size-3</p>
+        <p class="fs-4">Font size-4</p>
+        <p class="fs-5">Font size-5</p>
+        <p class="fs-6">Font size-6</p>
+        
+
+        <p class="h6 text-danger mt-5">
+            J) font-weight:
+        </p>
+        <p class="fs-5 fw-bold"> Font size fw-bold</p>
+        <p class="fs-5 fw-bolder"> Font size fw-bolder</p>
+        <p class="fs-5 fw-normal"> Font size fw-normal</p>
+        <p class="fs-5 fw-light"> Font size fw-light</p>
+        <p class="fs-5 fw-lighter"> Font size fw-lighter</p>
+        <p class="fs-5 fst-italic"> Font size fst-italic</p>
+        <p class="fs-5 fst-normal"> Font size fst-normal</p>
+
+
+
+        <p class="h6 text-danger mt-5">
+            J) line-height:
+        </p>
+        <p>Normal --> Burada satır aralıklarını görmek istiyorum. Bu yüzden bir alt satıra nasıl geçeceğine şahit olmalıyım. 
+            O halde bu yazı uzun olmalı ki buradaki olayı size net bir şekilde gösterebileyim. Line height yani satırlar arası 
+            yükseklik özelliği önemlidir. Ve sık sık göze hitap edecek ve onu yormayacak bir aralıkta olmasını isteriz.    
+        </p>
+        <p class="lh-1">lh-1 --> Burada satır aralıklarını görmek istiyorum. Bu yüzden bir alt satıra nasıl geçeceğine şahit olmalıyım. 
+            O halde bu yazı uzun olmalı ki buradaki olayı size net bir şekilde gösterebileyim. Line height yani satırlar arası 
+            yükseklik özelliği önemlidir. Ve sık sık göze hitap edecek ve onu yormayacak bir aralıkta olmasını isteriz.    
+        </p>
+        <p class="lh-sm">lh-sm --> Burada satır aralıklarını görmek istiyorum. Bu yüzden bir alt satıra nasıl geçeceğine şahit olmalıyım. 
+            O halde bu yazı uzun olmalı ki buradaki olayı size net bir şekilde gösterebileyim. Line height yani satırlar arası 
+            yükseklik özelliği önemlidir. Ve sık sık göze hitap edecek ve onu yormayacak bir aralıkta olmasını isteriz.    
+        </p>
+        <p class="lh-base">lh-base --> Burada satır aralıklarını görmek istiyorum. Bu yüzden bir alt satıra nasıl geçeceğine şahit olmalıyım. 
+            O halde bu yazı uzun olmalı ki buradaki olayı size net bir şekilde gösterebileyim. Line height yani satırlar arası 
+            yükseklik özelliği önemlidir. Ve sık sık göze hitap edecek ve onu yormayacak bir aralıkta olmasını isteriz.    
+        </p>
+        <p class="lh-lg">lh-lg --> Burada satır aralıklarını görmek istiyorum. Bu yüzden bir alt satıra nasıl geçeceğine şahit olmalıyım. 
+            O halde bu yazı uzun olmalı ki buradaki olayı size net bir şekilde gösterebileyim. Line height yani satırlar arası 
+            yükseklik özelliği önemlidir. Ve sık sık göze hitap edecek ve onu yormayacak bir aralıkta olmasını isteriz.    
+        </p>
+
+
+        <p class="h6 text-danger mt-5">
+            K) .monospace class'ı ile farklı bir yazı tipi ile metni değiştirebiliriz.
+        </p>
+        <p>Normal paragraf -> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias voluptas sapiente
+            minus quo reprehenderit neque aut doloribus! Aliquid at voluptatibus minima aspernatur velit alias laboriosam 
+            cumque dignissimos odio facere.
+        </p>
+        <p class="font-monospace">font-monospace -> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias voluptas sapiente
+            minus quo reprehenderit neque aut doloribus! Aliquid at voluptatibus minima aspernatur velit alias laboriosam 
+            cumque dignissimos odio facere.
+        </p>
+
+
+        <p class="h6 text-danger mt-5">
+            L) .text-reset class'ı uyguladığımız metnin rengini, bir üst ebeveyninden almış oluyoruz.
+        </p>
+        <p class="text-muted">
+            Bu renk <a href="#">Reset Linke</a> uygulanamayacak!!!
+        </p>
+        <p class="text-muted">
+            Bu renk <a href="#" class="text-reset">Reset Linke</a> de uygulanacak.
+        </p>
+
+
+        <p class="h6 text-danger mt-5">
+            M) .list-unstyled class'ı ile liste elemanlarındaki noktaları kaldırmış oluyoruz. 
+        </p>
+        <ul class="list-unstyled">
+            <li>Node Js</li>
+            <li>Php</li>
+            <li>Front-end
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                </ul>
+            </li>
+            <li>Asp .Net</li>
+        </ul>
+
+
+        <p class="h6 text-danger mt-5">
+            N) .list-inline class'ı tüm liste öğelerini tek bir satıra yerleştirir.
+            (her &lt;li&gt; öğesi de .list-inline-item class'ı ile birlikte kullanılır.)
+        </p>
+        <ul class="list-inline">
+            <li class="list-inline-item">Home</li>
+            <li class="list-inline-item">About Us</li>
+            <li class="list-inline-item">Profile</li>
+            <li class="list-inline-item">Contact</li>
+        </ul>
+
+
+    </div>
+</body>
+</html>
