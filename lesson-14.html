@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 14. Ders</title>
+</head>
+<body>
+    <div class="container my-2 p-3">
+        <h6>border ile tüm kenarlarda border'ın olacağını, border-0 ile border'ın olmayacağını belirtmiş olduk.</h6>
+        <div class="row d-flex justify-content-around">
+            <div class="col">
+                <div class="border-0 p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+        </div>
+
+
+        <h6 class="mt-5">border'ın hangi kenarlıklarının olacağını belirtebiliriz.</h6>
+        <div class="row">
+            <div class="col">
+                <div class="border-top border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border-start border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border-bottom border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border-end border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+        </div>
+
+
+        <h6 class="mt-5">border'ın hangi kenarlıklarının olmayacağını belirtebiliriz.</h6>
+        <div class="row">
+            <div class="col">
+                <div class="border-top-0 border border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border-start-0 border border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border-bottom-0 border border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border-end-0 border border-3 border-dark p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+        </div>
+
+
+        <h6 class="mt-5">border'a renk verebiliriz.</h6>
+        <div class="row">
+            <div class="col">
+                <div class="border border-3 border-primary p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-success p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-secondary p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-warning p-3 mb-3 bg-info" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+        </div>
+
+
+        <h6 class="mt-5">border'ı yuvarlayabiliriz</h6>
+        <h6>!!! rounded-pill class'ında genişliğin yükseklikten daha fazla olması gerekiyor.</h6>
+        <div class="row">
+            <div class="col">
+                <div class="border border-3 border-dark p-3 mb-3 bg-info rounded" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-dark p-3 mb-3 bg-info rounded-end" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-dark p-3 mb-3 bg-info rounded-circle" style="width: 6.25rem;height: 6.25rem;"></div>
+            </div>
+            <div class="col">
+                <div class="border border-3 border-dark p-3 mb-3 bg-info rounded-pill" style="width: 8.25rem;height: 6.25rem;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
