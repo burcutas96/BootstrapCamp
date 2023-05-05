@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 17. Ders</title>
+</head>
+
+<body>
+
+    <!-- 
+        Ders İçeriği:
+        .float özelliği
+        .user-select classları
+        .pe-none classı
+        shadow özelliği
+        overflow özelliği
+        visibility özelliği
+        .visually-hidden classı
+    -->
+
+    <div class="container my-3 p-3">
+
+        <h6 class="text-danger">A) float özelliği</h6>
+        <div class="clearfix">
+            <span class="float-start bg-dark text-white p-2">Sol Float</span>
+            <span class="float-end bg-danger text-white p-2">Sağ Float</span>
+        </div>
+
+
+        <h6 class="text-danger mt-5">
+            B) .user-select class'ları, kullanıcı içerikle etkileşime geçtiğinde içeriğin seçilme şeklini değiştirir.
+        </h6>
+        <p class="user-select-all">Bu paragrafa, kullanıcı bir defa tıkladığında paragraf tamamen seçilecektir.</p>
+        <p class="user-select-auto">Bu paragrafta default seçme davranışı vardır. Yani istenilen kelimeler
+            seçilebilecektir.</p>
+        <p class="user-select-none">Bu paragraf, kullanıcı tarafından tıklandığında seçilemez.</p>
+
+
+        <h6 class="text-danger mt-5">
+            C) a tag'larına tıklamayı önlemek için .pe-none sınıfını veya tıklama eklemek için .pe-auto sınıfını
+            kullanırız.
+        </h6>
+        <!-- .pe-none class'ı ile link'e tıklamayı önlemiş olduk. 
+            tab-index="-1" ile tab tuşları ile sayfada gezindiğimizde bu linkin üzerine gelinmeyecek.
+            aria-disabled="true" ile ekran okuyuculara, bu linkin tıklanamaz olduğunu bildirmiş oluyoruz. 
+        -->
+        <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">Bu link</a> tıklanamaz.</p>
+        <p><a href="#" class="pe-auto">Bu link</a> tıklanabilir. (Bu default davranıştır.).</p>
+        <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">Bu link</a>'in üst ögesi .pe-none classına
+            sahip olduğu
+            için ve bu linkte <code>pointer-events</code> özelliğini üst ögesinden devraldığı için tıklanamaz.
+            Ancak <a href="#" class="pe-auto">bu link</a> <code>pe-auto</code> sınıfına sahiptir ve tıklanabilir.
+        </p>
+
+
+        <h6 class="text-danger mt-5">
+            D) Nesnelerimize gölge eklemek için shadow özelliğinden faydalanırız.
+        </h6>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">shadow yok.</div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+        <div class="shadow p-3 mb-5 bg-body rounded">Default shadow</div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Large shadow</div>
+
+
+        <h6 class="text-danger mt-5">
+            E) overflow özelliği ile içeriğin ögeden taşması durumunda nasıl bir davranış sergileyeceğini belirlemiş oluyoruz.
+        </h6>
+        <div class="row">
+            <div class="col-3 bg-warning overflow-auto" style="height: 6rem;">
+                overflow-auto --> overflow-auto ile sağ tarafta bir scroll'un çıkmasını sağladık. Lorem adipisicing elit. 
+                Ullam sapiente eveniet repellat saepe rerum quasi! Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Dignissimos, perspiciatis!
+            </div>
+            <div class="col-3 bg-danger overflow-hidden" style="height: 6rem;">
+                overflow-hidden --> overflow-auto ile taşan kısmın gizlenmesini sağladık. Lorem ipsum consectetur adipisicing elit. 
+                Ullam sapiente eveniet repellat saepe rerum quasi!Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Dignissimos, perspiciatis!
+            </div>
+            <div class="col-3 bg-info overflow-visible" style="height: 6rem;">
+            overflow-visible --> overflow-visible default davranıştır. Taşan kısım olduğu gibi görünür. Lorem ipsum dolor sit  elit. 
+                Ullam sapiente eveniet repellat saepe rerum quasi!Lorem ipsum dolor sit amet consectetur, 
+            </div>
+            <div class="col-3 bg-success overflow-scroll" style="height: 6rem;">
+                overflow-scroll --> overflow-scroll hem sağda hem de aşağıda scroll'ların görünmesini sağladık. Lorem ipsum dolor elit. 
+                Ullam sapiente eveniet repellat saepe rerum quasi!Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Dignissimos, perspiciatis!
+            </div>
+        </div>
+
+
+        <h6 class="text-danger mt-5">
+            F) visibility özelliği ile elemanlarımızın görünürlük ayarını değişitirebiliyoruz.<br>
+            .invisible class'ı, elemanı sadece kullanıcılar için görünmez yapar, sayfadaki diğer nesneler için görünmez yapmaz.
+            Bu yüzden de altındaki nesne onu görüp kendini ona göre konumlandırır. <br>
+            Ancak d-none class'ını verdiğimiz eleman'ı 
+            hem kullanıcılar hem de sayfadaki diğer nesneler görmez.
+        </h6>
+        <div class="row">
+            <!-- .visible classı default olan özelliktir. Nesne görünür. -->
+            <div class="col-12 bg-warning visible">Ben Görünürüm</div>
+            <div class="col-12 bg-warning invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias 
+                temporibus dicta sequi, ullam, iure ab ex voluptas sed quia accusamus magni non praesentium vitae quam, 
+                itaque porro atque ut! Saepe itaque, maxime quasi exercitationem eius corrupti consequatur beatae deleniti 
+                odio, tempora quis doloremque? Ducimus voluptatem necessitatibus neque vel at. Ipsum!
+            </div>
+            <div class="col-12 bg-warning visible">Ben Görünürüm</div>
+            <h6 class="text-danger">Yukarıdaki div, invisible olarak ayarlanmış üstündeki div'i gördüğü için ona göre konumlanır. </h6>
+        </div>
+
+
+        <h6 class="text-danger mt-5">
+            G) .visually-hidden classı ile nesnenin sadece ekran okuyucular için görünmesini sağlarız. <br>
+            Peki bu neden gerekli? Çünkü ekran okuyucular bizim sitemizi okuduğunda onlara bazı notlar düşmek isteriz. <br>
+            Mesela deriz ki "Bu link aktif değil", "Şu an bu linke tıklıyorsun", "Şuan bu sayfadasın" gibi mesaj vermek isteriz. <br>
+            Bu mesajlar sayesinde de ekran okuyucular, ekran okuyucu kullanan insanlara ne yaptıklarını söylerler.
+        </h6>
+        <p><span class="visually-hidden">Ekran okuyucu hariç kimse beni göremez.</span> Ama ben görünürüm.</p>
+
+
+    </div>
+</body>
+
+</html>
