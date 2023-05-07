@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 22. Ders</title>
+</head>
+<body>
+    <div class="container my-2">
+        <p> > Tablolarda tek bir hücrenin rengini de değiştirebiliyoruz.</p>
+        <p> > .table-striped class'ı ile tablomuzu çizgili bir renk kombinasyonu ile renklendiririz.</p>
+        <p> > .table-hover class'ı ile satırın üzerine gelindiğinde satır renginin değişmesini sağlıyoruz.</p>
+        <p> > .table-bordered class'ı ile tablomuza kenarlık ekleyebiliyoruz. border-primary gibi class'lar
+            ile de kenarlıkların rengini değiştirebiliriz.
+        </p>
+        <p> > .table-borderless class'ı ile tablonun kenarlıklarını kaldırabiliriz.</p>
+        <p> > .table-sm class'ı ile tablomuzu küçültebiliriz.</p>
+        <p> > .table-warning /... gibi renklendirme class'ları ile tablolarımızın başlık kısımlarına (yani
+            thead etiketi ile oluşturduğumuz satıra) renk verebiliriz.
+        </p>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-active table-striped table-bordered border-dark caption-top">
+                        <caption>Yazılımcı Listesi</caption>
+                        <!-- <th> scope özelliğini HTML5 desteklememektedir. 
+                        Scope özelliği tablonun başlık hücreleri ile standart hücrelerini ilişkilendirmek için kullanılır.
+                        Scope özelliği tablonun sütun, satır veya satır ve sütun grupları için başlık olduğunu belirtir.
+                    -->
+                        <thead class="table-primary border-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Software Language</th>
+                            </tr>
+                        </thead>
+                        <tbody class="align-middle">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Fehmi</td>
+                                <td>Uyar</td>
+                                <td>Javascript</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Emrullah</td>
+                                <td>Özcan</td>
+                                <td>Php</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>İsa</td>
+                                <td>Tekin</td>
+                                <td>C++</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Murat</td>
+                                <td>Berk</td>
+                                <td>C#</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Elnaz</td>
+                                <td>Uyar</td>
+                                <td class="table-danger border-dark">Python</td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Bu tablo yazılım bilenlerin olduğu tablodur.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <p> > caption etiketini ekran okuyucular için kullanırız. Bir tablonun başlığı işlevini görür.
+            Ve ekran okuyucuyu kullanan kullanıcılarımız içinde kolaylık sağlar. .caption-top class'ı ile 
+            caption'u tablonun başına konumlandırabiliriz.
+        </p>
+        <p class="mt-2">> .align-middle class'ı ile tablomuzda dikey hizalama yapabiliriz.</p>
+        <p> > colspan ile kolonları rowspan ile satırları birleştiririz.</p>
+        <p> > .text-center / end / start class'ları ile satır içindeki metinlerimizi hizalarız.</p>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-active table-striped table-bordered border-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Software Language</th>
+                            <th scope="col">Try</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Fehmi</td>
+                            <td>Uyar</td>
+                            <td>Javascript</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo?
+                                Quaerat tenetur placeat consectetur maiores, at voluptate deserunt pariatur voluptates
+                                neque
+                                perferendis nam id sunt ex consequatur doloremque. Aspernatur illum assumenda ex quas
+                                voluptates accusantium maiores praesentium consequatur nemo sed dolorem, tempora quod
+                                natus
+                                esse quidem modi voluptate? Eligendi, sint! Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ducimus, eaque asperiores? Tempore nesciunt veniam similique harum laudantium iste
+                                minus,
+                                cupiditate consectetur reiciendis accusamus eum necessitatibus.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table class="table table-warning mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="3" class="text-center">İç içe tablo örneği</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">A</th>
+                                            <th scope="col">B</th>
+                                            <th scope="col">C</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Deneme</td>
+                                            <td>Deneme</td>
+                                            <td>Deneme</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Test123</td>
+                                            <td>Test123</td>
+                                            <td>Test123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Emrullah</td>
+                            <td>Özcan</td>
+                            <td>Php</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo?
+                                Quaerat tenetur placeat consectetur maiores, at voluptate deserunt pariatur voluptates
+                                neque
+                                perferendis nam id sunt ex consequatur doloremque. Aspernatur illum assumenda ex quas
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>İsa</td>
+                            <td>Tekin</td>
+                            <td>C++</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo?
+                                Quaerat tenetur placeat consectetur maiores, at voluptate deserunt pariatur voluptates
+                                neque
+                                perferendis nam id sunt ex consequatur doloremque. Aspernatur illum assumenda ex quas
+                                voluptates accusantium maiores praesentium consequatur nemo sed dolorem, tempora quod
+                                natus
+                                esse quidem modi voluptate? Eligendi, sint! Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Hasan</td>
+                            <td colspan="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                maiores.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Murat</td>
+                            <td>Berk</td>
+                            <td>C#</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo?
+                                Quaerat tenetur placeat consectetur maiores, at voluptate deserunt pariatur voluptates
+                                neque
+                                perferendis nam id sunt ex consequatur doloremque. Aspernatur illum assumenda ex quas
+                                voluptates accusantium maiores praesentium consequatur nemo sed dolorem, tempora quod
+                                natus
+                                esse quidem modi voluptate? Eligendi, sint!
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Elnaz</td>
+                            <td>Uyar</td>
+                            <td>Python</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo?
+                                Quaerat tenetur placeat consectetur maiores, at voluptate deserunt pariatur voluptates
+                                neque
+                                perferendis nam id sunt ex consequatur doloremque. Aspernatur illum assumenda ex quas
+                                voluptates accusantium maiores praesentium consequatur nemo sed dolorem, tempora quod
+                                natus
+                                esse quidem modi voluptate? Eligendi, sint! Lorem ipsum dolor sit amet consectetur,
+                                adipisicing
+                                elit. Necessitatibus aut nesciunt recusandae. Alias, velit in?
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <p class="mt-2"> > Aşağıdaki tablonun uzunluğu yüzünden site responsive'liğini kaybetti. Bunu önleyebilmek için 
+            .table-responsive class'ını kullanmalıyız.
+        </p>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-active table-striped table-bordered border-dark">
+                        <caption>Yazılımcı Listesi</caption>
+                        <!-- <th> scope özelliğini HTML5 desteklememektedir. 
+                        Scope özelliği tablonun başlık hücreleri ile standart hücrelerini ilişkilendirmek için kullanılır.
+                        Scope özelliği tablonun sütun, satır veya satır ve sütun grupları için başlık olduğunu belirtir.
+                    -->
+                        <thead class="table-primary border-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Software Language</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                            </tr>
+                        </thead>
+                        <tbody class="align-middle">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Fehmi</td>
+                                <td>Uyar</td>
+                                <td>Javascript</td>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Emrullah</td>
+                                <td>Özcan</td>
+                                <td>Php</td>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>İsa</td>
+                                <td>Tekin</td>
+                                <td>C++</td>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Murat</td>
+                                <td>Berk</td>
+                                <td>C#</td>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Elnaz</td>
+                                <td>Uyar</td>
+                                <td class="table-danger border-dark">Python</td>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                                <th scope="col">Software</th>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Bu tablo yazılım bilenlerin olduğu tablodur.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur beatae id iure, architecto maiores dolores 
+            quam necessitatibus, magnam quidem dicta repellendus obcaecati deserunt nemo ut tempore porro! Rem voluptatum 
+            a dignissimos doloribus maxime optio ipsa aperiam dicta nam rerum, quod ipsum similique pariatur neque, dolorem 
+            numquam labore, cum id vero expedita molestiae. Incidunt commodi esse deserunt odio saepe. Expedita, officiis 
+            quae totam at minus deleniti accusantium facilis laboriosam eaque nam! Dignissimos dolores doloremque minus 
+            eius repudiandae quia nisi ea reprehenderit mollitia obcaecati tenetur deserunt possimus pariatur quae neque 
+            debitis, eum esse porro laudantium incidunt illum? Ab eveniet voluptates earum temporibus.
+        </p>
+    </div>
+</body>
+</html>
