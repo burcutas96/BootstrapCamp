@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 23. Ders</title>
+</head>
+<body>
+
+    <div class="container my-2">
+
+        <p> > .img-fluid class'ı ile resmi duyarlı hale getiririz.</p>
+        <p> > .img-thumbnail class'ı, resme kenarlık ekler.</p>
+        <p> > .rounded class'ı ile resmin kenarlarını yuvarlarız.</p>
+        <p> > .mx-auto, .text-center, .float class'ları ile resmi ortalayabiliriz.</p>
+        
+        <div class="row">
+            <div class="col-12">
+                <img src="img/Tom's_Restaurant.jpg" class="img-fluid rounded-4">
+            </div>
+        </div>
+
+        <p class="mt-3"> > Altyazılı bir resim gibi bir içerik parçası görüntülememiz gerektiğinde &lt;figure&gt; bileşenini kullanabiliriz.</p>
+        <p> > Html 5 &lt;figure&gt; ve &lt;figcaption&gt; ögeleri için bazı temel stiller sağlamak üzere dahil edilen .figure , 
+            .figure-img ve .figure-caption sınıflarını kullanın. 
+        </p>
+        <p> > Şekillerdeki resimlerin belirgin bir boyutu yoktur, bu nedenle duyarlı hale getirmek 
+            için .img-fluid sınıfını &lt;img&gt; dosyanıza eklediğinizden emin olun.
+        </p>
+        <p> > Temel .figure sınıfı, bir figure öğesini belirtmek için kullanılır.</p>
+        <p> > .figure-img, figure öğesinde kullanılan görüntüyü belirtmek için kullanılır.</p>
+        <p> > .figure-caption, figure'ın altında bir resim yazısı görüntülemek için kullanılır. 
+            caption'ı .text-end gibi class'lar ile konumlandırabiliriz.
+        </p>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <figure class="figure">
+                    <img src="img/toms-restaurant-morningside.jpg" class="img-fluid figure-img rounded" width="400" height="400">
+                    <figcaption class="figure-caption">Bu bir resim başlığıdır.</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <p>
+            > Bootstrap jumbotron önemli içerikleri daha fazla belirgin hale getirmek için büyük 
+            bir kutu içinde göstermek için kullanılmaktadır. Ancak jumbotron bootstrap 5'de kaldırılmıştır
+            bu yüzden diğer sürümlerinde kullanılabilir.
+        </p>
+        <p> > Bootstrap 5'de kendimiz şu şekilde bir jumbotron oluşturabiliriz.</p>
+        <div class="mt-3 p-5 bg-success text-white rounded">
+            <h1>Jumbotron Örneği</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quasi voluptates 
+                eos blanditiis eaque excepturi saepe qui debitis error, velit esse odio quia est vero 
+                dicta officiis hic recusandae reiciendis praesentium molestiae in. Distinctio nobis eos 
+                qui reprehenderit, dolore aspernatur vero ipsum ullam quos. Temporibus commodi, amet 
+                fuga unde facilis aspernatur consequatur. Architecto blanditiis, quas placeat repellendus 
+                incidunt perspiciatis neque optio, modi ducimus eaque veniam qui assumenda ipsa quo quis.
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
