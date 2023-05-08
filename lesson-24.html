@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 24. Ders</title>
+</head>
+<body>
+    <div class="container my-2">
+        <p> > role attribute'u ile işaretlediğimiz div'in ne rolü olduğunu belirtmiş oluyoruz. Bunu ekran okuyucular için yapıyoruz.</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-primary" role="alert">
+                    <strong>Primary Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <strong>Secondary Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-success" role="alert">
+                    <strong>Success Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    <strong>Danger Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    <strong>Warning Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-info" role="alert">
+                    <strong>Info Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-light" role="alert">
+                    <strong>Light Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    <strong>Dark Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                </div>
+            </div>
+        </div>
+
+        <p> > Bootstrap ile kapatılabilir bir alert de yapabiliriz.</p>
+        <p> > Çarpı işaretini / kapatma simgesini bootstrap bizim için .btn-close class'ı ile oluşturmuş. 
+            Eğer alert'ü kapatmak istiyorsam benim js'i tetiklemem gerekiyor. Bunun içinde bootstrap  data-bs-dismiss="alert"
+            diye bir attribute oluşturmuş. 
+            Ve son olarak ekran okuyucuların bu div'i bir kapatma simgesi olarak görmesi için aria-label="Kapat" mesajını veriyoruz.
+        </p>
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-dark alert-dismissible" role="alert" id="myAlert">
+                    <strong>Dark Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi?
+                    <a href="#" class="alert-link">Ben bir alert linkiyim.</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+                </div>
+            </div>
+        </div>
+
+        <p> > Eğer bootstrap'ın alert'ü kapatması için oluşturduğu js attribute'unu kullanmak 
+            istemiyorsak ya da kullanamıyorsak kendi js kodlarımızı şu şekilde yazabiliriz. (Dokümana bak!)
+        </p>
+        <p>
+            > Alert kapatılmadan önce veya kapatılırken başka bir işlem yapmak istiyorsak 
+            dokümantasyondaki gibi bir js kodu oluşturabiliriz. 
+        </p>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const alertBtn = document.querySelector("#alertBtn"); //alert butonuna bu class'ı veriyoruz. aria-label="Kapat" dediğimiz div'e
+        const myAlert = document.querySelector("#myAlert");
+        alertBtn.addEventListener("click", function(){
+            const alertDiv = new bootstrap.Alert(myAlert);  //çektiğimiz myAlert div'ine yeni bir bootstrap alert at. 
+            alertDiv.close();  //ve myAlert id'li alert'ümüzü kapat.
+        })
+    </script>
+
+    <script>
+        myAlert.addEventListener("close.bs.alert", function(){
+            alert("kapatıldı.");
+        })
+    </script>
+</body>
+</html>
