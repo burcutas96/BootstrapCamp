@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 25. Ders</title>
+</head>
+
+<body>
+    <div class="container my-2">
+        <p> > Butonda herhangi bir yazının olmaması durumunda .visually-hidden class'ı
+            ile bu butonun ne işe yaradığını ekran okuyuculara belirtmeliyiz.
+        </p>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <button type="button" class="btn btn-link">
+                    <span class="visually-hidden">Metni olmayan butonlar için bu şekilde bir div hazırlamalıyız.</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+                <button type="button" class="btn btn-outline-link">Link</button>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <a href="#" class="btn btn-danger" role="button">Linkimiz</a>          <!-- Bir linke button görevi verdiğimizi -->
+                <button type="submit" class="btn btn-danger">Submit Button</button>    <!-- 'role' attribute'u ile belirtmeliyiz. -->
+                <input type="button" value="Buton Input" class="btn btn-danger">
+                <input type="submit" value="Submit Input" class="btn btn-danger">
+                <input type="reset" value="Reset Input" class="btn btn-danger">
+
+            </div>
+        </div>
+
+
+        <p class="mt-5"> > .btn-lg butonun boyutunu büyültürken, .btn-sm küçültür.</p>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-outline-warning btn-lg">Warning</button>
+                <button type="button" class="btn btn-outline-info btn-sm">Info</button>
+            </div>
+        </div>
+        
+
+        <p class="mt-5"> > disabled attribute'u ile butonu etkisiz hale getirmiş oluyoruz.</p>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-outline-danger" disabled>Warning</button>
+                <button type="button" class="btn btn-dark" disabled>Info</button>
+            </div>
+        </div>
+
+
+        <p class="mt-5"> > Linklerde disabled attribute'unu kullandığımızda ekran okuyuculara 
+            bu linkin kullanılmadığına dair bir mesaj vermeliyiz.
+        </p>
+        <p> > Ekran okuyuculara bu linkin inaktif bir link olduğunu belirtmek için aria-disabled="true" attribute'unu kullanıyoruz.</p>
+        <p>
+            > Bir linki disabled yapabilmemiz için a etiketinin href attribute'unu da kaldırmamız gerekiyor. Ve 
+            a etiketine attribute olarak disabled özelliğini veremediğimiz için bootstrap'ın disabled class'ını kullanıyoruz.  
+        </p>
+        <p> > Bu linkin bir buton görevinde olduğunu 'role' attribute'u ile belirtiyoruz. </p>
+        <p> > Ve tab tuşuna basıldığında bu linkin üzerine gelinmesini önlemek için tabindex="-1" attribute'unu kullanıyoruz. </p>
+        <a class="btn btn-dark btn-lg disabled" role="button" aria-disabled="true" tabindex="-1">Link</a>
+
+
+        <p class="mt-5"> > Butonumuzun bütün satırı olduğu gibi kaplamasını istiyorsak:</p>
+        <div class="d-grid">
+            <button type="button" class="btn btn-primary btn-block">Primary</button>
+        </div>
+        <p class="mt-4"> > Alternatif:</p>
+        <button type="button" class="btn btn-secondary mb-4 w-100">Secondary</button>
+    </div>
+</body>
+
+</html>
