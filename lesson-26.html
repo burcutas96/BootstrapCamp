@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap 5 | 26. Ders</title>
+</head>
+
+<body>
+    <div class="container my-2 p-4">
+        <p>> .btn-group class'ları inline özelliğe sahiptir.</p>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- Ekran okuyucular için bu div'e bir role verip bunun bir group olduğunu belirtmemiz gerekiyor. Aynı zamanda ekran okuyucunun
+                    karşı tarafa doğru bir şekilde burada ne işlem yapıldığını anlatması için bir aria-label oluşturuyoruz. Ve diyoruz ki 
+                    burdaki butonlarımız Ayarlar'la ilgili butonlardır. 
+                -->
+                <div class="btn-group" role="group" aria-label="Ayarlar">
+                    <button type="button" class="btn btn-success">Ayar Sol</button>
+                    <button type="button" class="btn btn-success">Ayar Orta</button>
+                    <button type="button" class="btn btn-success">Ayar Sağ</button>
+                </div>
+
+                <div class="btn-group" role="group" aria-label="Ayarlar">
+                    <button type="button" class="btn btn-outline-success">Ayar Sol</button>
+                    <button type="button" class="btn btn-outline-success">Ayar Orta</button>
+                    <button type="button" class="btn btn-outline-success">Ayar Sağ</button>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Butonları Dikey Hizalama</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group-vertical" role="group" aria-label="Ayarlar">
+                    <button type="button" class="btn btn-secondary">Ayar Üst</button>
+                    <button type="button" class="btn btn-info">Ayar Orta</button>
+                    <button type="button" class="btn btn-primary">Ayar Alt</button>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Linkleri butona dönüştürme</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group">
+                    <!-- .active class'ı nerde olduğumuzu anlamamızı sağlıyor. Örneğin url olarak bu sayfadayız gibi bir 
+                        bilgilendirme yapılmasını sağlıyor. Bizim bu sayfada olduğumuzu anlamamız için active class'ını kullanabiliriz.
+                        Ancak ekran okuyuculara hangi sayfada olduğumuzu anlatmak için ayriyetten aria-current 
+                        attribute'unu da kullanmamız gerekir.  
+                    -->
+                    <a href="#" class="btn btn-primary active" aria-current="page">Aktif Link</a>
+                    <a href="#" class="btn btn-primary">Link</a>
+                    <a href="#" class="btn btn-primary">Link</a>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Checkbox kutularını butona dönüştürme</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group" role="group" aria-label="Çekbaks Buton Grubu">
+                    <input type="checkbox" class="btn-check" id="bsCheck1" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="bsCheck1">Checkbox 1</label>
+                    <input type="checkbox" class="btn-check" id="bsCheck2" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="bsCheck2">Checkbox 2</label>
+                    <input type="checkbox" class="btn-check" id="bsCheck3" autocomplete="off" checked>
+                    <label class="btn btn-outline-danger" for="bsCheck3">Checkbox 3</label>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Radio'ları butona dönüştürme</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group" role="group" aria-label="Radyo Buton Grubu">
+                    <input type="radio" class="btn-check" name="bsRadio" id="bsRadio1" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="bsRadio1">Radio 1</label>
+                    <input type="radio" class="btn-check" name="bsRadio" id="bsRadio2" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="bsRadio2">Radio 2</label>
+                    <input type="radio" class="btn-check" name="bsRadio" id="bsRadio3" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="bsRadio3">Radio 3</label>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Button toolbar</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-toolbar" role="toolbar" aria-label="Tulbar Buton Grubu">
+                    <div class="btn-group me-2" role="group" aria-label="İlk Grup">
+                        <button type="button" class="btn btn-success">1</button>
+                        <button type="button" class="btn btn-success">2</button>
+                        <button type="button" class="btn btn-success">3</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="İkinci Grup">
+                        <button type="button" class="btn btn-warning">4</button>
+                        <button type="button" class="btn btn-warning">5</button>
+                        <button type="button" class="btn btn-warning">6</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Üçüncü Grup">
+                        <button type="button" class="btn btn-danger">7</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Buton Boyutları</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group btn-group-lg" role="group" aria-label="Ayarlar">
+                    <button type="button" class="btn btn-danger">Large Button</button>
+                    <button type="button" class="btn btn-dark">Large Button</button>
+                    <button type="button" class="btn btn-warning">Large Button</button>
+                </div>
+                <hr>
+                <div class="btn-group" role="group" aria-label="Ayarlar">
+                    <button type="button" class="btn btn-danger">Normal Button</button>
+                    <button type="button" class="btn btn-dark">Normal Button</button>
+                    <button type="button" class="btn btn-warning">Normal Button</button>
+                </div>
+                <hr>
+                <div class="btn-group btn-group-sm" role="group" aria-label="Ayarlar">
+                    <button type="button" class="btn btn-danger">Small Button</button>
+                    <button type="button" class="btn btn-dark">Small Button</button>
+                    <button type="button" class="btn btn-warning">Small Button</button>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="mt-5">> Açılır Menülü Butonlar</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group" role="group" aria-label="Açılır Buton Grubu">
+                    <button type="button" class="btn btn-success">Bir</button>
+                    <button type="button" class="btn btn-success">İki</button>
+
+                    <!-- dropdown-toggle class'ı ile "Açılır Buton" yazısının yanına aşağı yönlü bir simge ekledim. 
+                        - Bu açılır butonu kullanabilmek için javascript'in, data-bs-toggle="dropdown" attribute'unu kullanıyorum.
+                        - aria-expanded attribute'u ile sayfa ilk yüklendiği anda açılır menünün açık bir şekilde görüntülenip 
+                        görüntülenmeyeceğini belirtmiş oluyorum.
+                    -->
+
+                    <!-- Açılır butonun altında bir tane liste oluşturuyorum ve bu listeye dropdown-menu class'ını ekleyerek 
+                        listenin dropdown menüsü olmasını sağlıyorum. 
+                        - aria-labelledby attribute'u ile ekran okuyuculara bu listenin hangi elemana ait olduğunu belirtiyorum.
+                    -->
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-success dropdown-toggle" id="myDropDown"
+                            data-bs-toggle="dropdown" aria-expanded="false">Açılır Buton</button>
+                        <ul class="dropdown-menu" aria-labelledby="myDropDown">
+                            <li><a href="#" class="dropdown-item">Anasayfa</a></li>
+                            <li><a href="#" class="dropdown-item">Hakkımızda</a></li>
+                            <li><a href="#" class="dropdown-item">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
